@@ -19,11 +19,6 @@ gem "jbuilder"
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
-# Use the database-backed adapters for Rails.cache, Active Job, and Action Cable
-gem "solid_cache"
-gem "solid_queue"
-gem "solid_cable"
-
 gem "pg"
 gem "dotenv-rails"
 gem "will_paginate"
@@ -64,4 +59,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "dartsass-rails", "~> 0.5.1"
+gem "dartsass-rails"
