@@ -1,0 +1,34 @@
+<div class="ui container">
+  <h1 class="ui header">Recipes</h1>
+
+  <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+  <br>
+  <% @recipes.each_slice(5) do |slice| %>
+    <div class="row">
+      <% slice.each do |recipe| %>
+        <div class="col-sm">
+          <div class="card">
+        <% if recipe.image.present? %>
+          <div class="card-img-top">
+            <%= image_tag recipe.image, alt: recipe.title, class: "img-fluid" %>
+          </div>
+        <% end %>
+
+        <div class="card-body">
+          <a class="card-title"><%= recipe.title %></a>
+          <div class="card-text"><strong>Cook Time:</strong> <%= recipe.cook_time %> min</div>
+          <div class="card-text"><strong>Prep Time:</strong> <%= recipe.prep_time %> min</div>
+          <div class="card-text"><strong>Ratings:</strong> ⭐ <%= recipe.ratings %></div>
+          <div class="card-text">
+            <% if recipe.category.present? %>
+              <span class="ui label"><strong>Category:</strong> <%= recipe.category.name %></span>
+            <% end %>
+            <a href="<%= recipe_path(recipe) %>" class="btn btn-primary">View Recipe</a>
+          </div>
+        </div>
+      </div>
+        </div>
+    <% end %>
+    </div>
+  <% end %>
+</div>

@@ -25,8 +25,10 @@ gem "solid_cache"
 gem "solid_queue"
 gem "solid_cable"
 
-gem 'pg'
-gem 'dotenv-rails'
+gem "pg"
+gem "dotenv-rails"
+gem "will_paginate"
+gem "bootstrap"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -62,3 +64,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "dartsass-rails", "~> 0.5.1"

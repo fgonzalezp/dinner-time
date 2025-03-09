@@ -38,6 +38,6 @@ new_ingredients.each do |ingredient|
   ingredient[:recipe_id] = recipe_id_map[ingredient[:temp_id]]
 end
 
-Ingredient.insert_all(new_ingredients.map{ |e| e.except(:temp_id) })
+Ingredient.insert_all(new_ingredients.map { |e| e.except(:temp_id) })
 
 puts "Seeding complete!"
