@@ -57,7 +57,7 @@
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.3.5, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="connection_pool (v2.5.0, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, rbenv: 2.7.7) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="dartsass-rails (v0.5.1, rbenv: 2.7.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dartsass-rails (v0.4.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="date (v3.4.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.10.0, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv (v2.8.1, rbenv: 2.7.7) [gem]" level="application" />
@@ -132,7 +132,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rails-omakase (v1.1.0, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.4.1, rbenv: 2.7.7) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sass-embedded (v1.63.6, rbenv: 2.7.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass-embedded (v1.62.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.3.2, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.9.0, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sshkit (v1.24.0, rbenv: 2.7.7) [gem]" level="application" />

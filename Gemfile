@@ -59,4 +59,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "dartsass-rails"
+gem 'sass-embedded', '< 1.63.0'
+gem 'dartsass-rails'
