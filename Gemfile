@@ -1,4 +1,4 @@
-ruby '2.7.7'
+ruby "2.7.7"
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
@@ -37,26 +37,22 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri ruby ], require: "debug/prelude"
-
-  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
-
-  # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem "rspec-rails"
 end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   gem "pry-rails"
-  gem 'capistrano'
-  gem 'capistrano-rails'
-  gem 'capistrano-passenger'
-  gem 'capistrano-rbenv'
-  gem 'ed25519'
-  gem 'bcrypt_pbkdf'
+  gem "capistrano"
+  gem "capistrano-rails"
+  gem "capistrano-passenger"
+  gem "capistrano-rbenv"
+  gem "ed25519"
+  gem "bcrypt_pbkdf"
 end
 
 group :test do
@@ -64,4 +60,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-gem 'dartsass-rails'
+gem "dartsass-rails"

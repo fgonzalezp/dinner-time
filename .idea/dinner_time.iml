@@ -66,6 +66,7 @@
     <orderEntry type="library" scope="PROVIDED" name="dartsass-rails (v0.4.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="date (v3.4.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.10.0, rbenv: 2.7.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv (v2.8.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v2.8.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.1, rbenv: 2.7.7) [gem]" level="application" />
@@ -130,6 +131,11 @@
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.10.0, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.6.0, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.4.1, rbenv: 2.7.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.13.0, rbenv: 2.7.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.13.0, rbenv: 2.7.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.13.0, rbenv: 2.7.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v6.1.2, rbenv: 2.7.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.13.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.73.2, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.38.1, rbenv: 2.7.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.24.0, rbenv: 2.7.7) [gem]" level="application" />
@@ -541,6 +547,7 @@
               <RakeTaskImpl description="Truncate all/specified *.log files in log/ to zero bytes (specify which logs with LOGS=test,development)" fullCommand="log:clear" id="clear" />
             </subtasks>
           </RakeTaskImpl>
+          <RakeTaskImpl description="Run all specs in spec directory (excluding plugin specs)" fullCommand="spec" id="spec" />
           <RakeTaskImpl description="Report code statistics (KLOCs, etc) from the application or engine" fullCommand="stats" id="stats" />
           <RakeTaskImpl id="stimulus">
             <subtasks>
@@ -656,6 +663,12 @@
                   <RakeTaskImpl description="" fullCommand="railties:install:migrations" id="migrations" />
                 </subtasks>
               </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="spec">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="spec:prepare" id="prepare" />
+              <RakeTaskImpl description="" fullCommand="spec:statsetup" id="statsetup" />
             </subtasks>
           </RakeTaskImpl>
           <RakeTaskImpl description="" fullCommand="tmp" id="tmp" />

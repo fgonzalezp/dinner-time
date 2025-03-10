@@ -1,5 +1,4 @@
 class RecipesController < ApplicationController
-
   def index
     @tags= tags || []
     @recipes =  if params[:full_match] == "yes"
