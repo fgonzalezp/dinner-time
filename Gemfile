@@ -64,6 +64,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-
-gem 'sass-embedded', '< 1.63.0'
 gem 'dartsass-rails'
