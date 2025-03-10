@@ -11,8 +11,8 @@
       <div class="row">
         <div class="col-md-12">
           <%= form.submit "Search", class: "btn btn-primary my-2 justify-content-end" %>
-          <%= form.label :full_match, "Full ingredients match" %>
-          <%= form.check_box :full_match, { checked: true }, 'yes', 'no' %>
+          <%= form.label :full_match, "Only recipes containing all ingredients" %>
+          <%= form.check_box :full_match, { checked: params[:full_match] == 'yes' }, 'yes', 'no' %>
         </div>
       </div>
       <div class="row">
