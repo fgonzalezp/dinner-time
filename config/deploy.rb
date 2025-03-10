@@ -10,6 +10,7 @@ ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/dinner_time"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "tmp/webpacker", "vendor", ".bundle", "public/system", "public/uploads", "storage"
+set :linked_files, %w[config/database.yml config/master.key]
 
 
 # Default value for :format is :airbrussh.
