@@ -71,6 +71,23 @@ http://localhost:3000
 
 ---
 
+## 🧪 Testing Use Cases
+
+### Use Case 1: Find recipes containing one or more of the ingredients
+
+1. Go to the root of the application.
+2. Type in the search field the recipe ingredients, pressing enter after finishing typing each ingredient.
+3. Click search.
+
+### Use Case 2: Find recipes containing all ingredients
+
+1. Go to the root of the application.
+2. Type in the search field the recipe ingredients, pressing enter after finishing typing each ingredient.
+3. Check **Only recipes containing all ingredients**.
+4. Click search.
+
+---
+
 ## ✅ Additional Notes
 
 - Ensure **PostgreSQL** is installed and running on your local machine.
