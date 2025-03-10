@@ -27,6 +27,7 @@ test:
 production:
   adapter: postgresql
   timeout: 5000
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: <%= Rails.application.credentials.production.database.host %>
   username: <%= Rails.application.credentials.production.database.username %>
   password: <%= Rails.application.credentials.production.database.password %>
