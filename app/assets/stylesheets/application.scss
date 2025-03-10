@@ -9,3 +9,25 @@
  * Consider organizing styles into separate files for maintainability.
  */
 @import "bootstrap";
+
+.pagination {
+  display: flex;
+  gap: 10px;
+}
+
+.pagination a, .pagination span {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.pagination .current {
+  background-color: #4F46E5;
+  color: white;
+}
+
+.pagination a:hover {
+  background-color: #E5E7EB;
+}
