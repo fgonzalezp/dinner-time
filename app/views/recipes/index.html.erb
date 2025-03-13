@@ -11,6 +11,7 @@
                 <%= image_tag image_url(recipe.image), alt: recipe.title, class: "img-fluid", width: 300, height: 100 %>
               </div>
               <a class="card-title"><%= recipe.title %></a>
+              <div class="card-text"><strong>Author:</strong> <%= recipe.author %></div>
               <div class="card-text"><strong>Cook Time:</strong> <%= recipe.cook_time %> min</div>
               <div class="card-text"><strong>Prep Time:</strong> <%= recipe.prep_time %> min</div>
               <div class="card-text"><strong>Ratings:</strong> ⭐ <%= recipe.ratings %></div>
