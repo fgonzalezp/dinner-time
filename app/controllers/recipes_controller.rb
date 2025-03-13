@@ -8,7 +8,7 @@ class RecipesController < ApplicationController
     end
 
     @records_size = @recipes.count
-    @recipes = @recipes.paginate(page: params[:page], per_page: 9)
+    @recipes = @recipes.paginate(page: params[:page], per_page: 12)
 
     respond_to do |format|
       format.html

@@ -4,9 +4,12 @@
   <div class="container">
     <div class="row">
       <% @recipes.each do |recipe| %>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <div class="card mb-4 box-shadow">
             <div class="card-body">
+              <div class="card-img-top">
+                <%= image_tag image_url(recipe.image), alt: recipe.title, class: "img-fluid", width: 300, height: 100 %>
+              </div>
               <a class="card-title"><%= recipe.title %></a>
               <div class="card-text"><strong>Cook Time:</strong> <%= recipe.cook_time %> min</div>
               <div class="card-text"><strong>Prep Time:</strong> <%= recipe.prep_time %> min</div>
