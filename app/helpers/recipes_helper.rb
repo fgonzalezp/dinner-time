@@ -4,5 +4,7 @@ module RecipesHelper
     parsed_url = URI.parse(raw_url)
     query_params = CGI.parse(parsed_url.query)
     query_params['url'].first
+  rescue
+    raw_url
   end
 end
